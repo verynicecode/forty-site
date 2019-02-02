@@ -1,0 +1,7 @@
+!!!
+%html
+  %head
+    %title= current_page.data.title || "Forty"
+    = stylesheet_link_tag "site"
+    = javascript_include_tag "site"
+  %body= yield
