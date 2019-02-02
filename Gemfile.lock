@@ -101,10 +101,8 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  middleman (~> 4.2)
-  middleman-autoprefixer (~> 2.7)
-  tzinfo-data
-  wdm (~> 0.1)
+  middleman (= 4.3.2)
+  middleman-autoprefixer
 
 BUNDLED WITH
    1.17.3
