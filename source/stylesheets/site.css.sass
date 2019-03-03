@@ -1,3 +1,74 @@
+$bright-white: #fff
+$off-white: #eee
+$gray: #999
+$bright-green: #29FF71
+$off-black: #0A2411
+
+$prompt-light: "Prompt Light"
+$prompt-black: "Prompt Black"
+
+a
+  color: $off-white
+
+
 body
-  background: black
-  color: white
+  background-color: $bright-white
+  color: $off-white
+  font-family: $prompt-light
+  margin: 0
+  padding: 0
+
+  div#wrapper
+    background-color: $off-black
+    margin: 0 auto
+    padding: 20px
+    width: 900px
+
+    header
+      align-items: center
+      border-bottom: 20px solid $gray
+      display: flex
+      h1
+        color: $bright-green
+        font-family: $prompt-black
+        font-size: 80px
+        line-height: 80px
+        margin: 0
+        padding: 0
+        text-transform: uppercase
+        flex-grow: 0
+      nav
+        display: flex
+        flex-grow: 1
+        justify-content: flex-end
+
+        a
+          font-size: 24px
+          margin-left: 20px
+
+    main
+      padding: 20px
+      h2
+        font-size: 40px
+        line-height: 50px
+
+        &.sign-up
+          font-size: 50px
+          line-height: 60px
+          text-align: center
+          a
+            background-color: $bright-green
+            color: $off-black
+            font-family: $prompt-black
+            padding: 4px 18px
+            text-decoration: none
+            text-transform: uppercase
+      p
+        font-size: 30px
+        line-height: 40px
+
+    footer
+      border-top: 20px solid $gray
+      font-size: 18px
+      line-height: 24px
+      text-align: center
