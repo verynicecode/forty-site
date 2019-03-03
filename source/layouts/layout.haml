@@ -4,4 +4,20 @@
     %title= current_page.data.title || "Forty"
     = stylesheet_link_tag "site"
     = javascript_include_tag "site"
-  %body= yield
+  %body
+    #wrapper
+      %header
+        %h1 Forty
+        %nav
+          %a(href="https://app.fortyeven.com") go to app
+      %main= yield
+      %footer
+        %p
+          copyright 2019
+          %a(href="https://www.verynicecode.com")Very Nice Code
+          %br
+          %a(href="/blog")blog
+          \|
+          %a(href="/legal")legal
+          \|
+          %a(href="/help")help
