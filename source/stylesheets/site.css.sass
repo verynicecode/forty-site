@@ -5,16 +5,15 @@ $bright-green: #29FF71
 $off-black: #0A2411
 
 $prompt: "Prompt"
+$open-sans: "Open Sans"
 
 a
   color: $off-white
 
-
 body
   background-color: $bright-white
   color: $off-white
-  font-family: $prompt
-  font-weight: 300
+  font-family: $open-sans
   margin: 0
   padding: 0
 
@@ -30,12 +29,14 @@ body
       display: flex
       h1
         color: $bright-green
+        flex-grow: 0
+        font-family: $prompt
         font-size: 80px
+        font-weight: 900
         line-height: 80px
         margin: 0
         padding: 0
         text-transform: uppercase
-        flex-grow: 0
       nav
         display: flex
         flex-grow: 1
@@ -48,6 +49,7 @@ body
     main
       padding: 20px
       h2
+        font-family: $prompt
         font-size: 40px
         font-weight: 300
         line-height: 50px
@@ -65,7 +67,7 @@ body
             text-transform: uppercase
       p
         font-size: 30px
-        line-height: 40px
+        line-height: 50px
 
     footer
       border-top: 20px solid $gray
