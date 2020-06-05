@@ -11,6 +11,7 @@ $off-black: #05200e
 $prompt: Prompt
 $open-sans: Open Sans
 
+$transition-config: 0.2s ease-in
 
 body
   background-color: $light-green
@@ -51,8 +52,14 @@ body
         justify-content: flex-end
 
         a
-          font-size: 24px
+          font-family: $prompt
+          font-size: 30px
+          font-weight: 700
           margin-left: 20px
+          text-decoration: none
+
+          &:hover
+            text-decoration: underline
 
     main
       padding: 20px
