@@ -11,25 +11,29 @@ $off-black: #05200e
 $prompt: Prompt
 $open-sans: Open Sans
 
-a
-  color: $bright-white
 
 body
-  background-color: $bright-white
-  color: $bright-white
+  background-color: $light-green
+  color: $off-black
   font-family: $open-sans
   margin: 0
   padding: 0
 
+  ::selection
+    background-color: $middle-green
+
+  a
+    color: $off-black
+
   div#wrapper
-    background-color: $off-black
+    background-color: $bright-white
     margin: 0 auto
     padding: 20px
-    width: 900px
+    width: 800px
 
     header
       align-items: center
-      border-bottom: 20px solid $middle-gray
+      border-bottom: 20px solid $light-gray
       display: flex
       h1
         color: $bright-green
@@ -74,7 +78,7 @@ body
         line-height: 50px
 
     footer
-      border-top: 20px solid $middle-gray
+      border-top: 20px solid $light-gray
       font-size: 18px
       line-height: 24px
       text-align: center
