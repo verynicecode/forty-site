@@ -1,3 +1,8 @@
+# frozen_string_literal: true
+
+require 'rubocop/rake_task'
+RuboCop::RakeTask.new(:rubocop)
+
 desc 'Build Middleman site'
 task :build do
   exit 1 unless system './bin/build'
@@ -10,4 +15,4 @@ task deploy: :build do
   exit 2 unless system "DEPLOY_TARGET=#{ENV['DEPLOY_TARGET']} ./bin/deploy"
 end
 
-task default: [:build]
+task default: %i[rubocop build]
