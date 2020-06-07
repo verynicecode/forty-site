@@ -2,9 +2,9 @@
 
 source 'https://rubygems.org'
 
-ruby '2.7.1'
+ruby File.read('.tool-versions').split[1]
 
-gem 'middleman', '4.3.6'
+gem 'middleman', '4.3.7'
 gem 'middleman-autoprefixer'
 gem 'rake'
 gem 'rubocop'
