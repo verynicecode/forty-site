@@ -1,0 +1,22 @@
+#!/bin/bash
+
+set -e
+
+blog_folder="source/blog"
+draft_folder="$blog_folder/7070"
+draft_date="07-07"
+draft_post=$(ls $draft_folder | grep $draft_date)
+draft_title=$(echo $draft_post | cut -c7-)
+today_date=$(date +%Y/%m-%d)
+
+target_path="$draft_folder/$draft_post"
+new_path="$blog_folder/$today_date-$draft_title"
+
+mv $target_path $new_path
+
+commit_message="Publish post"
+git add .
+git commit -am "$commit_message"
+git push
+
+gh pr create --fill --label automerge

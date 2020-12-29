@@ -1,0 +1,7 @@
+#!/bin/bash
+
+set -e
+
+title=$@
+future_date="7070-07-07"
+bundle exec middleman article "$title" --date $future_date
