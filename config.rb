@@ -13,6 +13,7 @@ activate :blog do |blog|
   # blog.layout = 'default'
   blog.default_extension = '.md'
   blog.summary_separator = /READ-MORE/
+  blog.new_article_template = File.expand_path('new_article_template.erb', File.dirname(__FILE__))
 end
 
 activate :autoprefixer do |prefix|
