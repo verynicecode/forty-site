@@ -1,0 +1,11 @@
+---
+title: Forty Blog
+---
+
+%p.rssLink= link_to "RSS Feed", "/blog/atom.xml"
+
+- for article in blog.articles do
+  %h2= link_to article.title, article.url
+  %p
+    %em published #{article.date.strftime('%A, %B %e, %Y')}
+  = article.summary.chomp

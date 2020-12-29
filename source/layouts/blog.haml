@@ -1,0 +1,6 @@
+= wrap_layout :default do
+  %p.rssLink= link_to "RSS Feed", "/blog/atom.xml"
+  %h2= current_article.title
+  %p
+    %em published #{current_article.date.strftime('%A, %B %e, %Y')}
+  = yield
