@@ -9,17 +9,16 @@
   %body
     #wrapper
       %header
-        %h1 Forty
-        %nav
-          %a(href="https://app.fortyeven.com") Go To App
+        %h1= link_to "Forty", "/"
+        %nav= link_to "Go To App", "https://app.fortyeven.com"
       %main= yield
       %footer
         %p
           copyright #{Time.now.year}
-          %a(href="https://www.verynicecode.biz")Very Nice Code
+          = link_to "Very Nice Code", "https://www.verynicecode.biz"
           %br
-          %a(href="/blog")blog
+          = link_to "blog", "/blog"
           \|
-          %a(href="/legal")legal
+          = link_to "legal", "/legal"
           \|
-          %a(href="/help")help
+          = link_to "help", "/help"
