@@ -1,5 +1,5 @@
 ---
-title: Forty Hours A Week Is Plenty
+title: Forty Hours a Week Is Plenty
 ---
 
 I made Forty to help me keep track of the number of hours I was working so that
@@ -15,7 +15,7 @@ hours but not for them, for you! Some will find this idea of logging hours akin
 to homework and quite tedious, but I find it deeply satisfying and key to
 finding good work/life balance.
 
-## Make Forty A Habit
+## Make Forty a Habit
 
 One of the first things I do when I sit down at my desk is open Forty and then
 enter my start time and when I expect to be done for the day. At the end of my
@@ -47,7 +47,7 @@ day to write in any PTO you used and then you have a place to see what you've
 used year-to-date and also the total entered. This way you can be more
 deliberate about how you take care of yourself. Please take more time off!
 
-## Free Forever If You Want
+## Free Forever if You Want
 
 Free accounts only have access to the current and previous week and I intend to
 keep this option for users that want it. This means that there is very low risk
@@ -58,7 +58,7 @@ By launching this app I'm betting that it will work for people and hopefully
 improve their lives! A paid upgrade gets you access to everything but a free
 option will be there for those that want it.
 
-## Open Source By Default
+## Open Source by Default
 
 Oh I almost forgot - Forty is open source! You can actually browse all the
 source code that I've written to build this sucker and hopefully learn a thing
@@ -76,7 +76,7 @@ the site responsive would be huge. Finally, I have some data visualization ideas
 that I'd love to experiment with. I have this picture in my head of a screen
 where you can see how often you hit the 40 hours even mark.
 
-## Give It A Shot
+## Give It a Shot
 
 In summary: use Forty to track how much time you work and help you establish
 better work/life balance. It's free to [sign up][sign-up] and then you can pay
