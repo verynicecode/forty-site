@@ -3,5 +3,6 @@
 set -e
 
 title=$@
+clean_title=$(echo $title | titlecase)
 future_date="7070-07-07"
-bundle exec middleman article "$title" --date $future_date
+bundle exec middleman article "$clean_title" --date $future_date
