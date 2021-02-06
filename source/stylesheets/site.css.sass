@@ -10,6 +10,7 @@ $off-black: #05200e
 
 $prompt: Prompt
 $open-sans: Open Sans
+$code-family: courier new, courier, monospace
 
 $transition-config: 0.2s ease-in
 
@@ -17,6 +18,7 @@ body
   background-color: $light-green
   color: $off-black
   font-family: $open-sans
+  font-size: 30px
   margin: 0
   padding: 0
 
@@ -85,9 +87,20 @@ body
             padding: 4px 18px
             text-decoration: none
             text-transform: uppercase
-      p, ul
-        font-size: 30px
+      p, ol, ul
         line-height: 50px
+        code
+          padding: 2px 4px
+
+      code
+        background-color: $light-gray
+        font-family: $code-family
+
+      pre
+        background-color: $light-gray
+        line-height: 32px
+        overflow-x: auto
+        padding: 20px
 
     footer
       border-top: 20px solid $light-gray
