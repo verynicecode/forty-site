@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+Rake.add_rakelib 'lib/tasks'
+
 require 'rubocop/rake_task'
 RuboCop::RakeTask.new(:rubocop)
 

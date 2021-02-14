@@ -1,4 +1,5 @@
 ---
+id: 1
 title: Forty Hours a Week Is Plenty
 ---
 
