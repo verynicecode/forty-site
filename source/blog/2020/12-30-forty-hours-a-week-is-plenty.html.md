@@ -88,5 +88,5 @@ love any feedback you have at either [fortyevenapp@gmail.com][email] or
 [forty-github]: https://github.com/verynicecode/forty-web
 [forty-feed]: https://www.fortyeven.com/blog/atom.xml
 [sign-up]: https://app.fortyeven.com/sign-up
-[email]: mailto:fortyevenapp@gmail.com
+[email]: mailto:feedback@fortyeven.com
 [twitter]: https://twitter.com/fortyeven
