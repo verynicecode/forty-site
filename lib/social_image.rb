@@ -97,7 +97,8 @@ class SocialImage
 
   def draw_main_background
     main_background = MainBackground.generate
-    main_background.rectangle(50, 50, WIDTH - 50, HEIGHT - 50)
+    height = two_line_title? ? HEIGHT - 50 : HEIGHT - 130
+    main_background.rectangle(50, 50, WIDTH - 50, height)
     main_background.draw(social_image)
   end
 
@@ -113,7 +114,8 @@ class SocialImage
 
   def draw_separator
     top_line = Separator.generate
-    top_line.line(80, 270, WIDTH - 80, 270)
+    y_offset = two_line_title? ? 270 : 200
+    top_line.line(80, y_offset, WIDTH - 80, y_offset)
     top_line.draw(social_image)
   end
 
@@ -132,7 +134,7 @@ class SocialImage
   def draw_meta
     meta_lines = compute_meta
     pointsize = MetaText::POINTSIZE
-    y_offset = two_line_title? ? 340 : 190
+    y_offset = two_line_title? ? 340 : 250
 
     meta_lines.each_with_index do |line, i|
       offset = (pointsize * i * 1.6) + y_offset
@@ -143,7 +145,7 @@ class SocialImage
   def draw_logo
     logo_size = 100
     append_image = Magick::Image.read('source/images/favicon.png').first.resize_to_fit(logo_size)
-    y_offset = two_line_title? ? (HEIGHT - logo_size - 80) : 190
+    y_offset = two_line_title? ? (HEIGHT - logo_size - 80) : 250
     social_image.composite!(append_image, (WIDTH - logo_size - 80), y_offset, Magick::OverCompositeOp)
   end
 
