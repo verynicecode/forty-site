@@ -3,7 +3,7 @@ version: 2
 global_defaults: &global_defaults
   working_directory: ~/forty-site
   docker:
-    - image: artsy/ruby:2.7.1-node-chrome
+    - image: circleci/ruby:2.7.2
 
 jobs:
   build:
